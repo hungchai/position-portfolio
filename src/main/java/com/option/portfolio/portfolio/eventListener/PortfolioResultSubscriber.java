@@ -65,13 +65,17 @@ public class PortfolioResultSubscriber {
             stockDto.setPrice(priceUpdate.getStockPrice());
             stockDto.setPriceTimestamp(priceUpdate.getPriceTimestamp());
         }
-        System.out.println(sb);
-        prettyPrint();
+        prettyPrint(sb);
     }
 
-    private void prettyPrint()
+    private void prettyPrint(StringBuilder in_sb)
     {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb;
+        if (in_sb == null) {
+            sb = new StringBuilder();
+        } else {
+            sb = in_sb;
+        }
         sb.append("\n");
         sb.append("## portfolio \n");
         sb.append(String.format("%-30s%30s%30s%30s%n", "Symbol", "Price", "Qty", "Value"));

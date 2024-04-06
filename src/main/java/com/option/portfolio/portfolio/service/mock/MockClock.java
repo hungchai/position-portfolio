@@ -37,8 +37,8 @@ public class MockClock implements Clock {
         now = Instant.parse(initialDateStr);
         ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
         executor.scheduleAtFixedRate(()->{
-            now = now.plusMillis(100);
-        }, 0, 100, TimeUnit.MILLISECONDS); // Update every 0.5 to 2 seconds
+            now = now.plusMillis(50);
+        }, 0, 50, TimeUnit.MILLISECONDS);
     }
 
 }

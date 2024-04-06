@@ -57,7 +57,7 @@
 - Mock Price Event
   - Publisher:  fn: MockMarketDataProvider.schedulePriceUpdates
   - Subscriber:  fn: MockMarketDataProvider.priceUpdateListener
-    - OptionPriceJob: fn: PortfolioResultSubscriber.initializeOptionPriceJob
+- OptionPriceJob: fn: PortfolioResultSubscriber.initializeOptionPriceJob
 
   ![portfolio-Page-2.jpg](portfolio-Page-2.jpg)
 
