@@ -2,7 +2,7 @@
 
 ### Preqrequisites
 - Java 17 sdk
-- Gradle 8.7
+- Gradle 8.7 (if not using the gradle wrapper)
 
 ### Running the application
 ./gradlew build && ./gradlew bootRun
